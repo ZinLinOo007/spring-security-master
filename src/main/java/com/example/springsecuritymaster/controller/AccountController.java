@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class AccountController {
     @GetMapping("/account")
     public String showAccountStatus(){
-        return "home";
+        return "account";
     }
 }

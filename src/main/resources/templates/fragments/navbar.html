@@ -32,7 +32,7 @@ xmlns:sec = "http://www.thymeleaf.org/extras/spring-security">
 
     <div sec:authorize="isAuthenticated()">
       <a href="#" th:href="@{/account}" class="mr-2">Account</a>
-      <a href="javascript:document.looutForm.submit()">Log Out</a>
+      <a href="javascript:document.logoutForm.submit()">Log Out</a>
 
       <form action="#" name="logoutForm" th:action="@{/logout}" method="post" th:hidden="true">
         <input hidden type="submit" value="Sign Out"/>
