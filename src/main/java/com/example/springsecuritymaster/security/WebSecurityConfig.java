@@ -79,6 +79,8 @@ public class WebSecurityConfig {
                 .mvcMatchers("/bootstrap/**")
                 .permitAll()
                 .mvcMatchers("/customers").hasRole(CUSTOMERS_PAG_VIEW)
+                .mvcMatchers("/employees").hasRole(EMPLOYEES_PAGE_VIEW)
+                .mvcMatchers("/departments").hasRole(DEPARTMENTS_PAGE_VIEW)
                 .anyRequest()
                 .authenticated()
                 .and()
